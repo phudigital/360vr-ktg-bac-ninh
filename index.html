@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Virtual Tour of KTG Industrial VSIP Bac Ninh II</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" id="metaViewport"
+		content="user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover"
+		data-tdv-general-scale="0.5" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<script src="lib/tdvplayer.js?v=1767040041011"></script>
+	<link rel="shortcut icon" href="favicon.ico?v=1767040041011">
+	<link rel="icon" sizes="48x48 32x32 16x16" href="favicon.ico?v=1767040041011">
+	<link rel="icon" type="image/png" sizes="16x16" href="misc/icon16.png?v=1767040041011">
+	<link rel="icon" type="image/png" sizes="32x32" href="misc/icon32.png?v=1767040041011">
+	<link rel="preload" href="locale/en.txt?v=1767040041011" as="fetch" crossorigin="anonymous" />
+	<link rel="preload" href="script.js?v=1767040041011" as="script" />
+	<link rel="preload" href="media/panorama_71F78BEC_6B67_DD76_41AE_01D7F7910A33_0/r/3/0_0.jpg?v=1767040041011"
+		as="image" />
+	<link rel="preload" href="media/panorama_71F78BEC_6B67_DD76_41AE_01D7F7910A33_0/l/3/0_0.jpg?v=1767040041011"
+		as="image" />
+	<link rel="preload" href="media/panorama_71F78BEC_6B67_DD76_41AE_01D7F7910A33_0/u/3/0_0.jpg?v=1767040041011"
+		as="image" />
+	<link rel="preload" href="media/panorama_71F78BEC_6B67_DD76_41AE_01D7F7910A33_0/d/3/0_0.jpg?v=1767040041011"
+		as="image" />
+	<link rel="preload" href="media/panorama_71F78BEC_6B67_DD76_41AE_01D7F7910A33_0/f/3/0_0.jpg?v=1767040041011"
+		as="image" />
+	<link rel="preload" href="media/panorama_71F78BEC_6B67_DD76_41AE_01D7F7910A33_0/b/3/0_0.jpg?v=1767040041011"
+		as="image" />
+	<meta property="og:title" content="Virtual Tour of KTG Industrial VSIP Bac Ninh II" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description"
+		content="360° aerial tour of KTG Industrial – LEED Gold-certified, 43,824m² at VSIP Bac Ninh II, near Hanoi & Noi Bai Airport. Ideal for modern manufacturing." />
+	<meta property="og:url" content="https://360vr.com.vn/projects/ktg-industrial-vsip-bac-ninh-2/index.html" />
+	<meta property="og:image"
+		content="https://360vr.com.vn/projects/ktg-industrial-vsip-bac-ninh-2/socialThumbnail.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="fb:app_id" content="817622095004141" />
+	<link rel="image_src"
+		href="https://360vr.com.vn/projects/ktg-industrial-vsip-bac-ninh-2/socialThumbnail.jpg?v=1767040041011">
+	<meta property="og:locale" content="en" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Virtual Tour of KTG Industrial VSIP Bac Ninh II" />
+	<meta name="twitter:description"
+		content="360° aerial tour of KTG Industrial – LEED Gold-certified, 43,824m² at VSIP Bac Ninh II, near Hanoi & Noi Bai Airport. Ideal for modern manufacturing." />
+	<meta name="twitter:url" content="https://360vr.com.vn/projects/ktg-industrial-vsip-bac-ninh-2/index.html" />
+	<meta name="twitter:image"
+		content="https://360vr.com.vn/projects/ktg-industrial-vsip-bac-ninh-2/socialThumbnail.jpg?v=1767040041011" />
+	<meta name="description"
+		content="360° aerial tour of KTG Industrial – LEED Gold-certified, 43,824m² at VSIP Bac Ninh II, near Hanoi & Noi Bai Airport. Ideal for modern manufacturing." />
+	<meta name="theme-color" content="#FFFFFF" />
+	<script src="script.js?v=1767040041011"></script>
+	<style type="text/css">
+		html,
+		body {
+			height: 100%;
+			width: 100%;
+			height: 100vh;
+			width: 100vw;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.fill-viewport {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+		}
+
+		.fill-viewport.landscape-left {
+			left: env(safe-area-inset-left);
+		}
+
+		.fill-viewport.landscape-right {
+			right: env(safe-area-inset-right);
+		}
+
+		#viewer {
+			z-index: 1;
+		}
+
+		#preloadContainer {
+			z-index: 2;
+			opacity: 0;
+			background-color: rgba(255, 255, 255, 1);
+			transition: opacity 0.5s;
+			-webkit-transition: opacity 0.5s;
+			-moz-transition: opacity 0.5s;
+			-o-transition: opacity 0.5s;
+		}
+
+		/* CTA Buttons Styles */
+		.cta-container {
+			position: fixed;
+			bottom: 30px;
+			right: 20px;
+			z-index: 9999;
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			align-items: center;
+		}
+
+		.cta-button {
+			width: 55px;
+			height: 55px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+			text-decoration: none;
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(5px);
+			border: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.cta-button:hover {
+			transform: scale(1.15) translateY(-5px);
+			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+		}
+
+		.cta-button svg {
+			width: 30px;
+			height: 30px;
+			fill: white;
+		}
+
+		.cta-button.zalo {
+			background: linear-gradient(135deg, #0084FF, #006EDC);
+		}
+
+		.cta-button.phone {
+			background: linear-gradient(135deg, #2ecc71, #27ae60);
+		}
+
+		.cta-button.messenger {
+			background: linear-gradient(135deg, #0084FF, #A033FF);
+		}
+
+		.cta-button.phone .pulse {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background: inherit;
+			opacity: 0.6;
+			z-index: -1;
+			animation: pulse-animation 2s infinite;
+		}
+
+		@keyframes pulse-animation {
+			0% {
+				transform: scale(1);
+				opacity: 0.6;
+			}
+
+			100% {
+				transform: scale(1.6);
+				opacity: 0;
+			}
+		}
+
+		/* Tooltip animation */
+		.cta-button::after {
+			content: attr(data-tooltip);
+			position: absolute;
+			right: 70px;
+			background: rgba(0, 0, 0, 0.7);
+			color: white;
+			padding: 5px 12px;
+			border-radius: 6px;
+			font-size: 13px;
+			font-family: Arial, sans-serif;
+			white-space: nowrap;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.3s ease;
+			transform: translateX(10px);
+		}
+
+		.cta-button:hover::after {
+			opacity: 1;
+			visibility: visible;
+			transform: translateX(0);
+		}
+	</style>
+	<link rel="stylesheet" href="fonts.css?v=1767040041011">
+</head>
+
+<body>
+	<div id="preloadContainer" class="fill-viewport">
+		<div
+			style="z-index: 4; position: absolute; overflow: hidden; background-size: contain; background-image: url('loading/HTMLImage_76217D42_5397_4C45_41C4_BC472A43CA41.png'); background-repeat: no-repeat; background-position: center center; overflow: hidden; left: 38.33%; bottom: 50.65%; width: 24.86%; height: 9.87%">
+		</div>
+		<div
+			style="z-index: 5; position: absolute; overflow: hidden; left: 0%; top: 50%; width: 100.00%; height: 6.63%">
+			<div style="text-align:left; color:#000; ">
+				<DIV STYLE="text-align:center;font-size:16px;"><SPAN
+						STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#777777;font-family:Arial, Helvetica, sans-serif;"><SPAN
+							STYLE="font-size:16px;font-family:'SF Pro Display Thin';">Loading virtual tour. Please
+							wait...</SPAN></SPAN></DIV>
+			</div>
+		</div>
+	</div>
+	<div id="viewer" class="fill-viewport"></div>
+
+	<!-- CTA Buttons -->
+	<div class="cta-container">
+		<!-- Zalo Button -->
+		<a href="https://zalo.me/0987654321" target="_blank" class="cta-button zalo" data-tooltip="Chat Zalo">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M2.333 4.2h19.334c.736 0 1.333.597 1.333 1.333v12.934c0 .736-.597 1.333-1.333 1.333H2.333C1.597 19.8 1 19.203 1 18.467V5.533C1 4.797 1.597 4.2 2.333 4.2zm6.667 4h1.333v4H11.667v1.333H7.667V12.2h1.333zm4.667 0l2 4 2-4h1.333l-2.667 5.333h-1.333L12.333 8.2zm-9.334 0h1.334v1.333H4.333l1.334 2.667H4.333zm11.334 1.333h1.333v1.333h-1.333z" />
+				<path
+					d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 12.29c-.2.2-.51.2-.71 0l-1.06-1.06c-.2-.2-.2-.51 0-.71l.53-.53c.2-.2.2-.51 0-.71l-1.06-1.06c-.2-.2-.51-.2-.71 0l-.53.53c-.2.2-.51.2-.71 0l-1.06-1.06c-.2-.2-.51-.2-.71 0l.53.53c.2.2.2-.51 0-.71l-1.06-1.06c-.2-.2-.51-.2-.71 0l-1.06 1.06c-.2.2-.2.51 0 .71l.53.53c.2.2.2.51 0 .71l1.06 1.06c-.2.2-.51.2-.71 0l-.53-.53c-.2-.2-.51-.2-.71 0l-1.06 1.06c-.2.2-.2.51 0 .71l3.18 3.18c.2.2.51.2.71 0l1.06-1.06c.2-.2.2-.51 0-.71l-.53-.53c-.2-.2-.51-.2-.71 0l1.06-1.06c.2-.2.51-.2.71 0l.53.53c.2.2.51.2.71 0l1.06-1.06c.2-.2.2-.51 0-.71l-.53-.53c-.2-.2-.51-.2-.71 0l1.06-1.06c.2-.2.51-.2.71 0l1.06 1.06c.2.2.2.51 0 .71l-1.06 1.06c-.2.2-.51.2-.71 0l-.53-.53c-.2-.2-.51-.2-.71 0z"
+					fill-rule="nonzero" />
+			</svg>
+		</a>
+
+		<!-- Messenger Button -->
+		<a href="https://m.me/yourusername" target="_blank" class="cta-button messenger" data-tooltip="Messenger">
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M12 2C6.36 2 1.75 6.27 1.75 11.5c0 2.98 1.5 5.64 3.86 7.37.2.15.33.39.33.64l-.02 2.22c-.01.55.54.91 1 .65l2.45-1.37c.22-.12.48-.15.72-.08.62.18 1.28.27 1.91.27 5.64 0 10.25-4.27 10.25-9.5S17.64 2 12 2zm1.25 12.5l-2.5-2.65-4.85 2.65 5.35-5.65 2.5 2.65 4.85-2.65-5.35 5.65z" />
+			</svg>
+		</a>
+
+		<!-- Phone Button -->
+		<a href="tel:0987654321" class="cta-button phone" data-tooltip="Gọi ngay">
+			<div class="pulse"></div>
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.12.45 2.33.69 3.58.69a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.24 2.46.69 3.58a1 1 0 01-.27 1.11z" />
+			</svg>
+		</a>
+	</div>
+</body>
+
+</html>
