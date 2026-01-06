@@ -1,0 +1,22 @@
+# 3DVista Player Files
+/lib/tdvplayer.js
+/lib/tdvplayer.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local config
+.env
+.env.local
